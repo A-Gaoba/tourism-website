@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 10% 10%;
+
+    --card: 220 20% 97%;
+    --card-foreground: 220 10% 10%;
+
+    --popover: 220 20% 97%;
+    --popover-foreground: 220 10% 10%;
+
+    --primary: 220 70% 50%;
+    --primary-foreground: 220 10% 98%;
+
+    --secondary: 220 10% 80%;
+    --secondary-foreground: 220 10% 10%;
+
+    --muted: 220 10% 90%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 220 70% 50%;
+    --accent-foreground: 220 10% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 220 10% 98%;
+
+    --border: 220 10% 80%;
+    --input: 220 10% 80%;
+    --ring: 220 70% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 220 10% 98%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 220 10% 98%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 220 10% 98%;
+
+    --primary: 220 70% 50%;
+    --primary-foreground: 220 10% 98%;
+
+    --secondary: 220 10% 30%;
+    --secondary-foreground: 220 10% 98%;
+
+    --muted: 220 10% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 220 70% 50%;
+    --accent-foreground: 220 10% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 220 10% 98%;
+
+    --border: 220 10% 30%;
+    --input: 220 10% 30%;
+    --ring: 220 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .neumorphic-shadow {
+    box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;
+  }
+
+  .neumorphic-inset {
+    box-shadow: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;
+  }
+
+  .dark .neumorphic-shadow {
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #2c2c2c;
+  }
+
+  .dark .neumorphic-inset {
+    box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #2c2c2c;
+  }
+}
+
