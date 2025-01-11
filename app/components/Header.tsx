@@ -52,7 +52,7 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-right">
-          السياحة العربية في روسيا
+          روسارابيا
         </Link>
 
         {/* Centered Navigation Menu */}
