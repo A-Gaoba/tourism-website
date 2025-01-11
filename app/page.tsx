@@ -5,19 +5,19 @@ import CategoryCard from '@/components/CategoryCard'
 
 export default function Home() {
   const categories = [
-    { title: 'الفنادق والشاليهات', description: 'اختر من بين أفضل أماكن الإقامة', link: '/hotels', image: '/placeholder.svg?height=200&width=300&text=Hotels' },
-    { title: 'الأنشطة', description: 'استكشف الأنشطة الممتعة', link: '/activities', image: '/placeholder.svg?height=200&width=300&text=Activities' },
-    { title: 'خدمات النقل', description: 'تنقل بسهولة وراحة', link: '/transportation', image: '/placeholder.svg?height=200&width=300&text=Transportation' },
+    { title: 'الفنادق والشاليهات', description: 'اختر من بين أفضل أماكن الإقامة', link: '/hotels', image: 'https://media.istockphoto.com/id/472899538/photo/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab.jpg?s=612x612&w=0&k=20&c=rz-WSe_6gKfkID6EL9yxCdN_UIMkXUBsr67884j-X9o=' },
+    { title: 'الأنشطة', description: 'استكشف الأنشطة الممتعة', link: '/activities', image: 'https://toursofmoscow.com/wp-content/uploads/2017/02/LaBEmsa00Mc.jpg' },
+    { title: 'خدمات النقل', description: 'تنقل بسهولة وراحة', link: '/transportation', image: 'https://www.mundilimos.com/wp-content/uploads/2021/06/airport-car-service.jpg' },
   ]
 
   return (
     <div className="flex flex-col min-h-screen">
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[95vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=1080&width=1920&text=Beautiful%20Russia"
+          src="/bg.jpg"
           alt="صورة لمعالم روسيا الجميلة"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           priority
           className="absolute inset-0 z-0"
         />
