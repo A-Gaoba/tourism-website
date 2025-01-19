@@ -26,11 +26,11 @@ export default function HotelsPage() {
     : (allAccommodations[selectedCity as keyof typeof allAccommodations]?.[accommodationType] || [])
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">الفنادق والشاليهات</h1>
+    <div className="container mx-auto px-4 py-8 mt-16">
+      <h1 className="text-3xl font-bold mb-8">الفنادق والشاليهات</h1>
       <CityFilter cities={cities} selectedCity={selectedCity} onSelectCity={setSelectedCity} />
       <Tabs value={accommodationType} onValueChange={(value) => setAccommodationType(value as 'hotels' | 'cottages')} className="mt-4">
-        <TabsList className="w-full neumorphic-shadow">
+        <TabsList className="w-42 neumorphic-shadow dark:bg-white">
           <TabsTrigger value="hotels" className="w-1/2 neumorphic-shadow data-[state=active]:neumorphic-inset transition-all duration-300">الفنادق</TabsTrigger>
           <TabsTrigger value="cottages" className="w-1/2 neumorphic-shadow data-[state=active]:neumorphic-inset transition-all duration-300">الشاليهات</TabsTrigger>
         </TabsList>

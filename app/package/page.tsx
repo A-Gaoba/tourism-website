@@ -171,7 +171,7 @@ ${calculateTotal()} روبل (ما يعادل ${(calculateTotal() / 25.4).toFixe
 
       <div className="mt-8">
         <h2 className="text-2xl font-bold mb-4">الإجمالي: {calculateTotal()} روبل (ما يعادل {(calculateTotal() / 25.4).toFixed(2)} ريال سعودي)</h2>
-        <Button onClick={sendToWhatsApp} className="mr-4">إرسال عبر واتساب</Button>
+        <Button onClick={sendToWhatsApp} className="ml-4">إرسال عبر واتساب</Button>
         <Button variant="outline" onClick={clearSelections}>مسح الكل</Button>
       </div>
       <Toaster />

@@ -11,7 +11,7 @@ interface CityFilterProps {
 
 const CityFilter: React.FC<CityFilterProps> = ({ cities, selectedCity, onSelectCity }) => {
   return (
-    <div className="mb-4">
+    <div className="mb-4 w-64">
       <label htmlFor="cityFilter" className="block mb-2 font-bold">تصفية حسب المدينة:</label>
       <select
         id="cityFilter"

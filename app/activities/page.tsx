@@ -22,7 +22,7 @@ export default function ActivitiesPage() {
     : allActivities.filter(activity => activity.city === cityFilter)
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-16">
       <h1 className="text-3xl font-bold mb-8">الأنشطة</h1>
       <div className="mb-4">
         <label htmlFor="cityFilter" className="block mb-2">تصفية حسب المدينة:</label>
@@ -30,8 +30,7 @@ export default function ActivitiesPage() {
           id="cityFilter"
           value={cityFilter}
           onChange={(e) => setCityFilter(e.target.value)}
-          className="p-2 border rounded"
-        >
+          className="w-64 p-2 rounded-md neumorphic-shadow focus:neumorphic-inset transition-all duration-300 bg-background" >
           <option value="all">كل المدن</option>
           <option value="موسكو">موسكو</option>
           <option value="سانت بطرسبرغ">سانت بطرسبرغ</option>
