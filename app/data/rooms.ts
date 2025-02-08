@@ -77,6 +77,5 @@ export const rooms: { [key: number]: Room[] } = {
       amenities: ['خزانة ملابس', 'مكتب عمل', 'إطلالة على الغابة']
     }
   ],
-  // ... add rooms for other cottages ...
 }
 

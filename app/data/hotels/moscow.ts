@@ -10,7 +10,8 @@ export const moscowAccommodations: CityAccommodations = {
       image: '/placeholder.svg?height=200&width=300&text=Ritz-Carlton%20Moscow',
       amenities: ['مطعم ميشلان', 'سبا فاخر', 'مسبح داخلي', 'إطلالات بانورامية'],
       rating: 4.8,
-      reviews: 1250
+      reviews: 1250,
+      type: 'hotel'
     },
     { 
       id: 2, 
@@ -20,7 +21,9 @@ export const moscowAccommodations: CityAccommodations = {
       image: '/placeholder.svg?height=200&width=300&text=Marriott%20Royal%20Aurora',
       amenities: ['مركز أعمال', 'صالة رياضية', 'مطاعم متعددة'],
       rating: 4.6,
-      reviews: 980
+      reviews: 980,
+      type: 'hotel'
+
     },
     {
       id: 3,
@@ -30,18 +33,10 @@ export const moscowAccommodations: CityAccommodations = {
       image: '/placeholder.svg?height=200&width=300&text=Lotte%20Hotel%20Moscow',
       amenities: ['سبا فاخر', 'مطاعم حائزة على جوائز', 'خدمة الكونسيرج'],
       rating: 4.7,
-      reviews: 1100
+      reviews: 1100,
+      type: 'hotel'
     },
-    {
-      id: 4,
-      name: 'فندق بولمان موسكو',
-      description: 'فندق حديث يقع بالقرب من حديقة غوركي ومتحف تريتياكوف',
-      price: 15000,
-      image: '/placeholder.svg?height=200&width=300&text=Pullman%20Moscow',
-      amenities: ['مركز لياقة بدنية', 'مطعم فرنسي', 'غرف اجتماعات'],
-      rating: 4.5,
-      reviews: 850
-    }
+  
   ],
   cottages: [
     { 
@@ -52,8 +47,8 @@ export const moscowAccommodations: CityAccommodations = {
       image: '/placeholder.svg?height=200&width=300&text=Moscow%20Country%20Cottage',
       amenities: ['موقد خشب', 'جاكوزي خارجي', 'شواية'],
       rating: 4.7,
-      reviews: 320
-    },
+      reviews: 320,
+      type: 'cottage'    },
     {
       id: 6,
       name: 'فيلا سيريبرياني بور',
@@ -62,18 +57,9 @@ export const moscowAccommodations: CityAccommodations = {
       image: '/placeholder.svg?height=200&width=300&text=Serebryany%20Bor%20Villa',
       amenities: ['ساونا خاصة', 'قارب صغير', 'حديقة واسعة'],
       rating: 4.9,
-      reviews: 180
+      reviews: 180,
+       type: 'cottage'
     },
-    {
-      id: 7,
-      name: 'كوخ زفينيغورود',
-      description: 'كوخ تقليدي روسي في مدينة زفينيغورود التاريخية، محاط بالطبيعة الخلابة',
-      price: 10000,
-      image: '/placeholder.svg?height=200&width=300&text=Zvenigorod%20Cottage',
-      amenities: ['فرن روسي تقليدي', 'بخاري خارجي', 'دراجات للإيجار'],
-      rating: 4.6,
-      reviews: 220
-    }
   ]
 }
 

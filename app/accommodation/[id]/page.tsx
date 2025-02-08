@@ -29,24 +29,24 @@ export default function AccommodationRoomsPage() {
 
   if (!accommodation) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 mt-16 flex justify-center items-center h-[80vh]">
         <h1 className="text-3xl font-bold mb-8">عذراً، لم يتم العثور على مكان الإقامة</h1>
       </div>
     )
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-16">
       <h1 className="text-3xl font-bold mb-8">
         {accommodation.type === 'hotel' ? 'الغرف المتاحة في' : 'تفاصيل شاليه'} {accommodation.name}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {accommodationRooms.map(room => (
-          <RoomCard 
-            key={room.id} 
-            {...room} 
+          <RoomCard
+            key={room.id}
+            {...room}
             accommodationId={accommodationId}
-            accommodationType={accommodation.type}
+            accommodationType={accommodation.type as 'hotel' | 'cottage'}
             accommodationName={accommodation.name}
           />
         ))}

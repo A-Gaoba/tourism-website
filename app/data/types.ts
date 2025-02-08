@@ -6,7 +6,8 @@ export interface Accommodation {
   image: string
   amenities: string[]
   rating: number
-  reviews: number
+  reviews: number,
+  type: string
 }
 
 export interface CityAccommodations {
